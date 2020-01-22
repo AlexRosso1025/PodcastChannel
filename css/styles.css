@@ -1,0 +1,577 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    max-width: 100%;
+}
+
+h1,p{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+main{
+    margin-top: 0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 1;
+    opacity: 90%;
+    background: white;
+}
+
+header .menu-list{
+    display: flex;
+    margin: 26px 0;
+}
+
+header .menu-list a:hover{
+    color: rgba(0,243,187,1);
+    text-decoration: line-through;
+}
+
+header .menu-list a:active{
+    color: rgba(6,10,36,0.56);
+    text-decoration: line-through;
+}
+
+header li{
+    font-size: 16px;
+    font-family: IBMPlexMono;;
+    list-style: none;
+    margin-right: 48px;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(6,10,36,1);
+}
+
+.logo{
+    margin-top: 22px;
+    margin-left: 48px;
+    width: 36px;
+    height: 36px;
+}
+
+#toggle,.burguer-menu{
+    display: none;
+}
+
+#container-title-flex{
+    margin-top: 20vh;
+}
+
+#container-title-flex{
+    margin-left: 200px;
+}
+
+#chapters{
+    position: relative;
+    bottom: 40px;
+}
+
+.button {  
+    font-family: IBM Plex Mono;  
+    font-size: 18px;  
+    line-height: 24px;  
+    padding: 16px 58px;    
+    text-transform: uppercase;  
+    text-align: center;  
+    background-color: #00F3BB;     
+    display: inline-block;
+    margin-bottom: 24px;
+}  
+
+.button:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: white;
+}
+
+.container-title h1{
+    font-size: 64px;
+    color: rgba(6,10,36,1);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container-title h1>strong{
+    color:blue;
+}
+
+.container-title p{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    line-height: 24px;
+    width: 57%;
+    margin-bottom: 56px;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.item:nth-child(odd) {
+    display: grid;
+    justify-items: self-end;
+    margin-right: 36px;
+    margin-bottom: 72px;
+}
+  
+.item:nth-child(even) {
+    display: grid;
+    justify-items: self-start;
+    margin-left: 36px;
+    margin-bottom: 72px;
+}
+
+h2{
+    font-size: 48px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.chapter{
+    position: relative;
+    top:130px;
+}
+
+.chapter h2{
+    margin-left: 200px;
+    color: white;
+    margin-bottom: 26px;
+}
+
+#chapters .container{
+    width: 100%;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    position: absolute;
+    height: 980px;
+    z-index: -1;
+}
+
+
+#about .container{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 35vh;
+}
+
+
+.description{
+    margin-left: 62px;
+    position: relative;
+    top: 40vh;
+}
+
+.description p{
+    line-height: 24px;
+    font-size: 16px;
+    width: 78%;
+    font-family: 'IBM Plex Mono Medium', monospace;
+    margin-top: 24px;
+}
+
+.description h2{
+    margin-top: 70px;
+}
+
+#about img{
+    width: 440px;
+    height: 660px;
+    margin-left: 200px;
+    z-index: 3;
+    position: relative;
+    top: 20vh;
+}
+
+#interviews h2{
+    margin-left: 200px;
+    margin-bottom: 36px;
+}
+
+.container-interviews{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-interviews img{
+    width: 33.333%;    
+}
+
+#topics h2{
+    margin-top:6.26%;
+    margin-left: 200px;
+    margin-bottom: 69px;
+}
+
+.container-topics{
+    display: flex;
+}
+
+.topic h3{
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 29px;
+}
+
+li{
+    list-style: none;
+}
+
+.topic{
+    text-align: center;
+    width: 18%;
+    margin-left: 30px;
+}
+
+.topic:nth-child(1){
+    margin-left: 200px;
+}
+
+.polygon{
+    background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+
+.new{
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);    
+    width: 100%;
+    height: 518px;
+}
+
+.novedad{
+    position: relative;
+    top: 35vh;
+}
+.novedad h2{
+    margin-top: 100px;
+    color: rgba(255,255,255,1);
+}
+
+#novedades{
+    text-align: center;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer i{
+    margin-right: 36px;
+    transform: rotate(0);
+    transition: 0.4s;
+}
+
+footer {
+    margin-right: 64px;
+}
+
+footer p{
+    margin-top: 36px;
+    margin-left: 100px;
+    font-size: 16px;
+}
+
+.networks{
+    display: flex;
+    margin: 36px 0;
+}
+
+footer i:hover{
+    transform: rotate(360deg);
+    transition: 0.4s;
+}
+
+iframe{
+    width: 100%; 
+    max-width: 584px;
+    height: 232px;
+    background-color: transparent;
+    border: 0px;
+}
+
+#menu-burguer{
+    display: none;
+}
+
+.paragraph-mobile{
+    display: none;
+}
+
+@media screen and (min-width:320px) and (max-width:800px){   
+    body{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 36px;
+        font-family: IBMPlexSans;
+        font-weight: 100;
+    }
+    
+    p{
+        font-size: 14px;
+        font-family: IBMPlexMono;
+    }
+    
+    header .container{
+        position: relative;
+    }
+
+    .menu-icon{
+        display: block;
+        float: right;
+        width: 18px;
+        height: 12px;
+        margin-top: 16px;
+    }
+
+    .logo{
+        width: 24px;
+        height: 24px;
+        margin-left: 16px;
+        margin-top: 10px;
+    }
+
+    .menu-list a{
+        margin-left: 16px;
+        color: rgba(255,255,255,1);
+    }
+
+    .menu-list li{
+        margin-top: 28px;
+    }
+
+    header nav ul{
+        flex-direction: column;
+    } 
+    
+    .burguer-menu{
+        display: inline-block;
+    }
+    
+    #toggle:checked ~ .burguer-menu i::before {
+        content: '\f00d';
+        position: relative;
+        top: 14px;
+        left: 235px;
+    }
+      
+    #toggle:checked ~ nav #main-menu {
+        display: inline-block;
+        position: relative;
+        top: 14px;
+        right: 50px;
+        width: 320px;
+        background-color: rgba(0,0,236,1);
+        height: 224px;
+    }
+
+    .fa-bars:before{
+        position: relative;
+        top:14px;
+        left: 100px;
+    }
+    
+    nav #main-menu {
+        height: 0;
+        display: none;
+    }
+
+    #container-title-flex{
+        margin-left: 16px;
+    }
+
+    .container-title h1{
+        font-size: 36px;
+        width: 80%;
+        margin-bottom: 16px;
+        margin-top: 29px;
+    }
+
+    .paragraph-desktop{
+        display: none;
+    }
+
+    .paragraph-mobile{
+        display: block;
+    }
+    
+    .container-title p {
+        margin-bottom: 36px;
+        line-height: 22px;
+        width: 100%;
+    }
+
+    .container-title h1>strong{
+        color:rgba(6,10,36,1);
+    }
+    
+    #container-title-flex{
+        margin-top: 3vh;
+        margin-bottom: 6vh;
+    }
+    
+    .button{
+        font-size: 16px;
+        padding: 16px 87px;
+        font-weight: 600;
+    }
+
+    #chapters .container{
+        width: 100%;
+        clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
+        position: absolute;
+        height: 1250px;
+    }
+
+    .chapter h2{
+        margin-left: 16px;
+        color: white;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        bottom: 45px;
+    }
+
+    iframe{
+        width: 100%; 
+        max-width: 298px;
+        height: 232px;
+        background-color: transparent;
+        border: 0px;
+    }
+   
+    .item:nth-child(odd), .item:nth-child(even){
+        justify-items: self-start;
+        margin-right: 0;
+        margin-left: 13px;
+        margin-bottom: 11px;
+    }
+
+    #about img{
+        width: 100%;
+        max-width: 360px;
+        height: 519px;
+        margin-left: 0;
+        z-index: 3;
+        position: relative;
+        top:18vh;
+    }
+
+    #about .container{
+        flex-direction: column;
+    }
+
+    .description{
+        margin-left: 36px;
+        top:14vh;
+    }
+
+    .description h2{
+        width: 50%;
+        line-height: 42px;
+    }
+
+    .description p{
+        font-size: 14px;
+        width: 100%;
+    }
+
+    #interviews h2{
+        margin-left: 16px;
+        width: 50%;
+    }
+
+    .container-interviews img{
+        width: 100%;
+    }
+
+    #topics h2{
+        margin-top: 48px;
+        width: 70%;
+        margin-left: 16px;
+    }
+
+    .container-topics{
+        display: block;
+    }
+
+    .topic:nth-child(1){
+        margin-left: 30px;
+    }
+
+    .topic{
+        width: 80%;
+    }
+
+    .novedad{
+        position: relative;
+        top:10vh;
+    }
+
+    .novedad h2 {
+        margin-top: 0;
+        width: 88%;
+        margin-left: 24px;
+        margin-bottom: 36px;
+    }
+
+    #novedades .button{
+        padding: 16px 44px;
+    }
+
+    .new {
+        clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
+        width: 100%;
+        height: 341px;
+    }
+
+    footer .container{
+        display: block;
+        text-align: center;
+    }
+
+    footer{
+        margin-top: 36px;
+        margin-right: 0;
+    }
+
+    footer p{
+        margin-top: 0;
+        margin-left: 0;
+        font-family: IBMPlexMono;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .networks{
+        margin-top: 16px ;
+        margin-bottom: 31px;
+    }
+
+    footer a:nth-child(1){
+        margin-left: 52px;
+    }
+
+    footer i{
+        margin-right: 34px;
+    }
+}
